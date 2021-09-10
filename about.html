@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <meta name="HandheldFriendly" content="true">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <title>R.H. King Academy</title>
+  </head>
+    <body>
+        <header>
+            <a href="homepage.html" class="wordLogo">R.H King Academy</a>
+            <div class="menu">
+              <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+              </div>
+              <a href="about.html">About</a>
+              <a href="#">Special Programs</a>
+              <a href="#">Parents</a>
+              <a href="#">Departments</a>
+              <a href="#">Students</a>
+              <a href="#">Community</a>
+            </div>
+            <div class="btn">
+              <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle('scrolling-active', window.scrollY > 0);
+        });
+    
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+    
+        menuBtn.addEventListener("click", () => {
+          menu.classList.add('active');
+        });
+    
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    </script>
+    <img class = "aboutBanner darken" src="DSC_0631.jpg">
+    <div class="content">
+      <div class="one">
+        <div class = "widgetOverlay ">
+            <h1 class="widgetTitle">Infographic:</h1>
+            <p class="widgetDescription">
+                Know when to self-isolate from Toronto Public Health
+            </p>
+            <button class="widgetButton" onclick = "window.open('http://schools.tdsb.on.ca/rhking/community/tph.pdf')">Learn More</button>
+       </div>
+    </div>
+    <div class="two">
+      <div class = "widgetOverlay ">
+          <h1 class="widgetTitle">Mission Statement</h1>
+          <p class="widgetDescription">
+            "Our mission is to enable all students to achieve their full potential through a well-rounded education, structured by the R.H. King Academy concepts and guided by a commitment to the core values of caring, striving and serving"
+          </p>
+     </div>
+   </div>
+   <div class="three  ">
+    <div class = "widgetOverlay ">
+        <h1 class="widgetTitle">Mission Statement</h1>
+        <p class="widgetDescription">
+          "Our mission is to enable all students to achieve their full potential through a well-rounded education, structured by the R.H. King Academy concepts and guided by a commitment to the core values of caring, striving and serving"
+        </p>
+        <button class="widgetButton" onclick = "window.open('http://schools.tdsb.on.ca/rhking/community/tph.pdf')">Learn More</button>
+    </div>
+  </body>
+</html>
